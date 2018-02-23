@@ -42,6 +42,7 @@ gulp.task('bs', () => {
 	});
 });
 
+
 gulp.task('default', ['bs','js','styles'], () => {
 	gulp.watch('dev/**/*.js',['js']);
 	gulp.watch('dev/**/*.scss',['styles']);
