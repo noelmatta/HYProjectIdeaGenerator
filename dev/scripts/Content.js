@@ -27,12 +27,9 @@ class Form extends React.Component {
       <section>
         <form action="">
           <Verb />
-          <Hold />
           <AdjNoun />
-          <Hold />
-          <Randomize /><br />
           <AddLine />
-          <RemoveLine />
+          <RemoveLine /><br />
           <Conjunction />
         </form>
       </section>
@@ -55,17 +52,11 @@ class RemoveLine extends React.Component {
     )
   }
 }
+
 class Randomize extends React.Component {
   render() {
     return (
       <button>randomize</button>
-    )
-  }
-}
-class Hold extends React.Component {
-  render() {
-    return (
-      <input type="checkbox" name="" id=""/>
     )
   }
 }
@@ -81,14 +72,29 @@ class AdjNoun extends React.Component {
 }
 
 class Verb extends React.Component {
+  constructor() {
+    super();
+    this.handleChange = this.handleChange.bind(this);
+  }
+  handleChange(e) {
+    console.log(e.target.value);
+  }
   render() {
     return (
-      <select name="" id="">
-        <option value="test">Verb</option>
+      <select name="" id="" value="" onChange={this.handleChange}>
+        <option value="on">Select A Verb</option>
+        <option value="test">Generates</option>
+        <option value="test2">Transforms</option>
+        <option value="test3">Calculates</option>
+        <option value="test4">Displays</option>
+        <option value="test5">Finds</option>
+        <option value="test6">Uses</option>
+        <option value="test7">Get A Random Verb</option>
       </select>
     )
   }
 }
+
 
 class Audience extends React.Component {
   render() {
@@ -107,6 +113,7 @@ class Conjunction extends React.Component {
         <option value="from">from</option>
         <option value="while">while</option>
         <option value="into">into</option>
+        <option value="to">to</option>
         <option value="for">for</option>
         <option value="if">if</option>
       </select>    )

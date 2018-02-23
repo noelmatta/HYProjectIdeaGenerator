@@ -37,6 +37,20 @@ firebase.initializeApp(config);
 
 // Overall components container
 class App extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      verb: ''
+    };
+    this.pickOption = this.pickOption.bind(this);
+    // this.function = this.function.bind(this);
+  }
+  pickOption(e) {
+    console.log("hey");
+    // this.setState({
+    //   [e.target.id]: e.target.value
+    // });
+  }
   render() {
     return (
       <div>
