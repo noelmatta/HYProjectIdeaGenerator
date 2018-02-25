@@ -1,7 +1,7 @@
 // Import modules
 import React from 'react';
 import ReactDOM from 'react-dom';
-import axios from 'axios'; // why not capitalized?
+import axios from 'axios';
 import Logo from './Logo.js';
 import UserLogin from './UserLogin.js';
 import SocialMedia from './SocialMedia.js';
@@ -13,16 +13,9 @@ import IdeaOutput from './IdeaOutput.js';
 const dataMuseURL = 'http://api.datamuse.com/words';
 const autoCorrect = 'http://api.datamuse.com/sug';
 
+
 // Words API info
-const wordsAPI = {
-  wordsURL  : 'https://wordsapiv1.p.mashape.com/words/',
-  method    : 'GET',
-  headers   : {
-                "X-Mashape-Key" : '1z9GeNNTkOmshzd4FVju29DqohZep18pXcUjsnwGUSVkD2Ngnf',
-                "Accept"        : 'application/json',
-                "Content-Type"  : 'application/json'
-  }
-}
+const wordsURL = 'https://wordsapiv1.p.mashape.com/words';
 
 // Firebase API info
 var config = {
