@@ -39,7 +39,7 @@ class App extends React.Component {
           </form>
           <span className="idea">
             <h2>The Greatest Project Idea:</h2>
-            <span className="ideaOutput">Build a web app that will {this.state.selectedVerb} {this.state.selectedAdjective} {this.state.selectedNoun}!!!</span>
+            <span className="ideaOutput">Build a web app that will {this.state.selectedVerb} {this.state.selectedAdjective} {this.state.selectedNoun}(s)!!!</span>
           </span>
         </main>
       </div>
