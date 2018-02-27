@@ -57,7 +57,7 @@ class App extends React.Component {
 
   }
   getWords(typeOfWord) {
-    axios.get(`http://api.wordnik.com:80/v4/words.json/randomWords?&includePartOfSpeech=${typeOfWord}&limit=15&api_key=a2a73e7b926c924fad7001ca3111acd55af2ffabf50eb4ae5`)
+    axios.get(`https://api.wordnik.com/v4/words.json/randomWords?&includePartOfSpeech=${typeOfWord}&limit=15&api_key=a2a73e7b926c924fad7001ca3111acd55af2ffabf50eb4ae5`)
     .then((res) => {
       const data = res.data;
       const wordCollector = [];
