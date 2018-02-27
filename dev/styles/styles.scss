@@ -27,9 +27,39 @@ select {
     padding: 10px;
     height: 45px;
     margin: 0 10px; 
-    min-width: 20%;
+    min-width: 20%;    
 }
 
 p {
     font-size: 1.5rem;
+}
+
+input[type="submit"] {
+    padding: 10px 15px;
+    font-size: 1.4rem;
+    display: block;
+    margin: 0 auto;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+.idea {
+    color: yellow;
+}
+
+.ideaOutput {
+    font-size: 2rem;
+}
+
+@media (max-width: 700px) {
+    select {
+        margin: 0 auto; 
+        min-width: 80%;    
+        display: block;
+    }
+    h1 {
+        font-size: 1.4rem;
+    }
 }
